@@ -7,7 +7,7 @@ import ControlPanel from './ControlPanel';
 
 
 
-const socket  = io.connect('http://localhost:3000');
+const socket  = io.connect('https://chessg-play-chess-online.onrender.com/');
 const chess = new Chess();
 // let board = chess.board();
 

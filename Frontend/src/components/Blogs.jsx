@@ -40,7 +40,7 @@ function Blogs() {
 
     const fetchBlogs = useCallback(async () => {
         try {
-            const result = await axios.get('http://localhost:3000/blogs');
+            const result = await axios.get('https://chessg-play-chess-online.onrender.com/blogs');
             setResponse(result);
             setLoading(false);
         } catch (error) {

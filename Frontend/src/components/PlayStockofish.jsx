@@ -5,7 +5,7 @@ import ChessBoard from './ChessBoard';
 import ChatBox from './ChatBox';
 import ControlPanel from './ControlPanel';
 
-const socket  = io.connect('http://localhost:3000');
+const socket  = io.connect('https://chessg-play-chess-online.onrender.com/');
 
 const stockfish = new Worker('node_modules/stockfish/src/stockfish.js');
 const chess = new Chess();
