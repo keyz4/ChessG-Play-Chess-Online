@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:5173", // React app URL
+    origin: "https://chess-g-play-chess-online.vercel.app/", // React app URL
     methods: ["GET", "POST"],
     credentials: true
   }
