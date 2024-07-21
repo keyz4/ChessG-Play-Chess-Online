@@ -1,0 +1,237 @@
+{
+  "items": [
+    {
+      "title": "Can You Solve A Puzzle From A Five-Time Armenian Chess Champion?",
+      "link": "https://www.chess.com/article/view/coach-of-the-month-maria-gevorgyan",
+      "pubDate": "Tue, 18 Jun 2024 11:07:59 -0700",
+      "content": "WGM Maria Gevorgyan is a five-time Armenian women&#39;s chess champion and a well-respected chess coach. Her lessons go beyond simply providing chess advice and aim to help her students improve in all aspects of their lives (but the Elo boost is nice,...",
+      "contentSnippet": "WGM Maria Gevorgyan is a five-time Armenian women's chess champion and a well-respected chess coach. Her lessons go beyond simply providing chess advice and aim to help her students improve in all aspects of their lives (but the Elo boost is nice,...",
+      "guid": "https://www.chess.com/article/view/coach-of-the-month-maria-gevorgyan",
+      "isoDate": "2024-06-18T18:07:59.000Z"
+    },
+    {
+      "title": "How Fast Are The Best Bullet Players?",
+      "link": "https://www.chess.com/article/view/how-fast-are-the-best-bullet-players",
+      "pubDate": "Wed, 12 Jun 2024 10:00:22 -0700",
+      "content": "The Bullet Chess Championship 2024 kicked off this week with a stacked lineup of FIDE top 10 players and bullet specialists! I gathered some data to highlight just how fast the fastest players on earth can play! \r\nBullet chess is a wild terrain wh...",
+      "contentSnippet": "The Bullet Chess Championship 2024 kicked off this week with a stacked lineup of FIDE top 10 players and bullet specialists! I gathered some data to highlight just how fast the fastest players on earth can play! \r\nBullet chess is a wild terrain wh...",
+      "guid": "https://www.chess.com/article/view/how-fast-are-the-best-bullet-players",
+      "isoDate": "2024-06-12T17:00:22.000Z"
+    },
+    {
+      "title": "There's No Such Thing As A Boring Chess Opening",
+      "link": "https://www.chess.com/article/view/theres-no-such-thing-as-a-boring-chess-opening",
+      "pubDate": "Tue, 11 Jun 2024 06:35:30 -0700",
+      "content": "&#34;I captured on d5. I was terribly ashamed, and from the time I swore: to play for a draw, at any rate with White, is to some degree a crime against chess.&#34; - GM Mikhail Tal on the Exchange Variation of the French Defense. \r\n\r\nMikhail Tal on a less...",
+      "contentSnippet": "\"I captured on d5. I was terribly ashamed, and from the time I swore: to play for a draw, at any rate with White, is to some degree a crime against chess.\" - GM Mikhail Tal on the Exchange Variation of the French Defense. \r\n\r\nMikhail Tal on a less...",
+      "guid": "https://www.chess.com/article/view/theres-no-such-thing-as-a-boring-chess-opening",
+      "isoDate": "2024-06-11T13:35:30.000Z"
+    },
+    {
+      "title": "DGPT LP Source Article",
+      "link": "https://www.chess.com/DGPT",
+      "pubDate": "Mon, 10 Jun 2024 02:46:18 -0700",
+      "content": "\r\n\r\n\r\n\r\n\r\nDisc Golf Pro Tour and Chess.com are Teaming Up\r\nLooking for something to do between rounds? Enjoy 30 days of Chess.com Premium for free! \r\n\r\nUnlimited Game Review\r\nUnlimited puzzles\r\nUnlimited lessons\r\nAnd more!\r\n\r\nClaim Offer\r\n\r\n\r\n \r\n\r...",
+      "contentSnippet": "Disc Golf Pro Tour and Chess.com are Teaming Up\r\nLooking for something to do between rounds? Enjoy 30 days of Chess.com Premium for free! \r\n\r\nUnlimited Game Review\r\nUnlimited puzzles\r\nUnlimited lessons\r\nAnd more!\r\n\r\nClaim Offer\r\n\r\n\r\n \r\n\r...",
+      "guid": "https://www.chess.com/DGPT",
+      "isoDate": "2024-06-10T09:46:18.000Z"
+    },
+    {
+      "title": "From Turtleneck Trauma To Chess Success: An Adult Learner Story",
+      "link": "https://www.chess.com/article/view/creator-of-the-month-hale-grande",
+      "pubDate": "Sun, 09 Jun 2024 22:01:18 -0700",
+      "content": "Hale Grande is an actor, streamer, and confessed lover of all things nerdy. He also shares a common addiction with many people reading this: chess. \r\nIn roughly two years, Hale has gone from a beginner to an 1800-rated player. Over 16,000 people a...",
+      "contentSnippet": "Hale Grande is an actor, streamer, and confessed lover of all things nerdy. He also shares a common addiction with many people reading this: chess. \r\nIn roughly two years, Hale has gone from a beginner to an 1800-rated player. Over 16,000 people a...",
+      "guid": "https://www.chess.com/article/view/creator-of-the-month-hale-grande",
+      "isoDate": "2024-06-10T05:01:18.000Z"
+    },
+    {
+      "title": "Banter Blitz, Bullet Battles, And Brilliant Bots",
+      "link": "https://www.chess.com/article/view/chesscom-update-june-2024",
+      "pubDate": "Fri, 07 Jun 2024 08:09:14 -0700",
+      "content": "We&#39;ve escaped the May-trix but June keeps us in the middle of a bullet-time showdown between some of the world&#39;s best players, as the 2024 Bullet Chess Championship continues. \r\nAlso: a mysterious new bot, free lessons by titled players, and the r...",
+      "contentSnippet": "We've escaped the May-trix but June keeps us in the middle of a bullet-time showdown between some of the world's best players, as the 2024 Bullet Chess Championship continues. \r\nAlso: a mysterious new bot, free lessons by titled players, and the r...",
+      "guid": "https://www.chess.com/article/view/chesscom-update-june-2024",
+      "isoDate": "2024-06-07T15:09:14.000Z"
+    },
+    {
+      "title": "What Can A Grandmaster Do With 60 Seconds?",
+      "link": "https://www.chess.com/article/view/what-can-a-grandmaster-do-with-60-seconds",
+      "pubDate": "Wed, 05 Jun 2024 22:48:37 -0700",
+      "content": "While commentating&#38;nbsp;in 2021, GM Vladimir Kramnik shared his candid opinion of bullet chess: \r\nWhy do you use a chessboard? There is no point, just put the clock and push the clock, and the first one who wins on time wins. There&#39;s no point to h...",
+      "contentSnippet": "While commentating&nbsp;in 2021, GM Vladimir Kramnik shared his candid opinion of bullet chess: \r\nWhy do you use a chessboard? There is no point, just put the clock and push the clock, and the first one who wins on time wins. There's no point to h...",
+      "guid": "https://www.chess.com/article/view/what-can-a-grandmaster-do-with-60-seconds",
+      "isoDate": "2024-06-06T05:48:37.000Z"
+    },
+    {
+      "title": "How To Be A Winner In Chess",
+      "link": "https://www.chess.com/article/view/how-to-be-a-winner-in-chess",
+      "pubDate": "Wed, 05 Jun 2024 06:57:54 -0700",
+      "content": "Nine years ago I wrote an article about the 2015 U.S. Junior Girls Championship. In that article I analyzed only one game and you might expect that it was played by the winner of the tournament, but instead I chose the player who finished eighth o...",
+      "contentSnippet": "Nine years ago I wrote an article about the 2015 U.S. Junior Girls Championship. In that article I analyzed only one game and you might expect that it was played by the winner of the tournament, but instead I chose the player who finished eighth o...",
+      "guid": "https://www.chess.com/article/view/how-to-be-a-winner-in-chess",
+      "isoDate": "2024-06-05T13:57:54.000Z"
+    },
+    {
+      "title": "The 10 Best Reasons To Lose At Chess",
+      "link": "https://www.chess.com/article/view/the-10-best-reasons-to-lose-at-chess",
+      "pubDate": "Fri, 31 May 2024 07:00:13 -0700",
+      "content": "Do you lose at chess? \r\nIf you said &#34;no,&#34; then let&#39;s be honest, you&#39;re lying to me and to yourself and need to take a long, hard look in the mirror. \r\nIf you said &#34;yes,&#34; then you&#39;re in the right place. My name is Lula, and I&#39;m a professional at lo...",
+      "contentSnippet": "Do you lose at chess? \r\nIf you said \"no,\" then let's be honest, you're lying to me and to yourself and need to take a long, hard look in the mirror. \r\nIf you said \"yes,\" then you're in the right place. My name is Lula, and I'm a professional at lo...",
+      "guid": "https://www.chess.com/article/view/the-10-best-reasons-to-lose-at-chess",
+      "isoDate": "2024-05-31T14:00:13.000Z"
+    },
+    {
+      "title": "How To Get Better At Chess Using Chess.com? Coaches Share Tips",
+      "link": "https://www.chess.com/article/view/chess-coaches-tips",
+      "pubDate": "Thu, 23 May 2024 08:20:39 -0700",
+      "content": "You might want to win more blitz games or maybe strengthen your tactical skills and see how far you can go in Puzzle Rush. Whatever your goal is, Chess.com has many features that can help you achieve them. \r\nHowever, with so many different feature...",
+      "contentSnippet": "You might want to win more blitz games or maybe strengthen your tactical skills and see how far you can go in Puzzle Rush. Whatever your goal is, Chess.com has many features that can help you achieve them. \r\nHowever, with so many different feature...",
+      "guid": "https://www.chess.com/article/view/chess-coaches-tips",
+      "isoDate": "2024-05-23T15:20:39.000Z"
+    },
+    {
+      "title": "11 Classic Chess Sayings",
+      "link": "https://www.chess.com/article/view/classic-chess-sayings",
+      "pubDate": "Tue, 21 May 2024 06:58:24 -0700",
+      "content": "Especially in this era of social media, it seems like everyone&#39;s got something to say at almost all times. This has always been true of chess, about which a&#38;nbsp;lot of stuff&#38;mdash;some of it more useful than others&#38;mdash;has been said. But of all...",
+      "contentSnippet": "Especially in this era of social media, it seems like everyone's got something to say at almost all times. This has always been true of chess, about which a&nbsp;lot of stuff&mdash;some of it more useful than others&mdash;has been said. But of all...",
+      "guid": "https://www.chess.com/article/view/classic-chess-sayings",
+      "isoDate": "2024-05-21T13:58:24.000Z"
+    },
+    {
+      "title": "Why Didn't Firouzja Follow Kasparov's Footsteps?",
+      "link": "https://www.chess.com/article/view/why-didnt-firouzja-follow-kasparov-chess",
+      "pubDate": "Thu, 16 May 2024 07:02:18 -0700",
+      "content": "Back in 1996, GM Garry Kasparov won 4-2 in a match versus the Deep Blue supercomputer. It turned out to be the last convincing human victory over an artificial chess player. The very next year, Deep Blue took revenge 3.5-2.5, and pretty soon match...",
+      "contentSnippet": "Back in 1996, GM Garry Kasparov won 4-2 in a match versus the Deep Blue supercomputer. It turned out to be the last convincing human victory over an artificial chess player. The very next year, Deep Blue took revenge 3.5-2.5, and pretty soon match...",
+      "guid": "https://www.chess.com/article/view/why-didnt-firouzja-follow-kasparov-chess",
+      "isoDate": "2024-05-16T14:02:18.000Z"
+    },
+    {
+      "title": "Chess Played Quick - BlitzChamps Hyper Bullet Arena",
+      "link": "https://www.chess.com/article/view/chess-played-quick-blitzchamps-hyperbullet-arena",
+      "pubDate": "Wed, 15 May 2024 12:37:54 -0700",
+      "content": "Chess Played Quick (CPQ), Chess.com&#39;s series of events where top chess streamers complete bounties for prizes, is back for another edition! \r\nChess Played Quick&#38;mdash;BlitzChamps Hyper Bullet Arena will take place on May 20 at 1:30 p.m. ET / 19:30...",
+      "contentSnippet": "Chess Played Quick (CPQ), Chess.com's series of events where top chess streamers complete bounties for prizes, is back for another edition! \r\nChess Played Quick&mdash;BlitzChamps Hyper Bullet Arena will take place on May 20 at 1:30 p.m. ET / 19:30...",
+      "guid": "https://www.chess.com/article/view/chess-played-quick-blitzchamps-hyperbullet-arena",
+      "isoDate": "2024-05-15T19:37:54.000Z"
+    },
+    {
+      "title": "Meet The Reason People Keep Beating You With The London System",
+      "link": "https://www.chess.com/article/view/creator-of-the-month-alex-banzea",
+      "pubDate": "Tue, 14 May 2024 20:44:03 -0700",
+      "content": "Has someone ever crushed you with the Jobava London? Thwarted your plans using the Caro-Kann defense? There&#39;s a chance that this is the man responsible for teaching them. \r\nIM Alex Banzea has many accolades: Romanian U-18 champion, recipient of th...",
+      "contentSnippet": "Has someone ever crushed you with the Jobava London? Thwarted your plans using the Caro-Kann defense? There's a chance that this is the man responsible for teaching them. \r\nIM Alex Banzea has many accolades: Romanian U-18 champion, recipient of th...",
+      "guid": "https://www.chess.com/article/view/creator-of-the-month-alex-banzea",
+      "isoDate": "2024-05-15T03:44:03.000Z"
+    },
+    {
+      "title": "Chess.com Launches Indian Streamer Program",
+      "link": "https://www.chess.com/article/view/chess-com-launches-chess-com-indian-streamer-program",
+      "pubDate": "Sat, 11 May 2024 10:26:21 -0700",
+      "content": "Chess.com is thrilled to launch the Indian Streamer Program. To help grow the chess streaming ecosystem in India, we offer a number of benefits to chess streamers of all skill levels who want to get involved on YouTube, Twitch and other streaming ...",
+      "contentSnippet": "Chess.com is thrilled to launch the Indian Streamer Program. To help grow the chess streaming ecosystem in India, we offer a number of benefits to chess streamers of all skill levels who want to get involved on YouTube, Twitch and other streaming ...",
+      "guid": "https://www.chess.com/article/view/chess-com-launches-chess-com-indian-streamer-program",
+      "isoDate": "2024-05-11T17:26:21.000Z"
+    },
+    {
+      "title": "You Won't Believe These Chess.com Records By Our Community Members",
+      "link": "https://www.chess.com/article/view/chesscom-records-2024",
+      "pubDate": "Fri, 10 May 2024 06:17:39 -0700",
+      "content": "Chess.com started 17 years ago, in May 2007&#38;mdash;just two years after the first YouTube video was published and the first Reddit thread was created. A lot has changed since then, but one thing remains the same: Chess.com has the most wonderful co...",
+      "contentSnippet": "Chess.com started 17 years ago, in May 2007&mdash;just two years after the first YouTube video was published and the first Reddit thread was created. A lot has changed since then, but one thing remains the same: Chess.com has the most wonderful co...",
+      "guid": "https://www.chess.com/article/view/chesscom-records-2024",
+      "isoDate": "2024-05-10T13:17:39.000Z"
+    },
+    {
+      "title": "7 Chess Hot Takes That Are Just True",
+      "link": "https://www.chess.com/article/view/chess-hot-takes",
+      "pubDate": "Thu, 09 May 2024 08:54:04 -0700",
+      "content": "Chess can sometimes be controversial, but some things about our beloved game are just true. While I may not be the best or most experienced player out there, I dare you to disagree with any of my hot takes: \r\n\r\nStalemate Being A Draw Is Awesome\r\nC...",
+      "contentSnippet": "Chess can sometimes be controversial, but some things about our beloved game are just true. While I may not be the best or most experienced player out there, I dare you to disagree with any of my hot takes: \r\n\r\nStalemate Being A Draw Is Awesome\r\nC...",
+      "guid": "https://www.chess.com/article/view/chess-hot-takes",
+      "isoDate": "2024-05-09T15:54:04.000Z"
+    },
+    {
+      "title": "Why You Shouldn't Rely On Chess Engine Analysis (And Other Tips From An International Master)",
+      "link": "https://www.chess.com/article/view/coach-of-the-month-im-novak-cabarkapa",
+      "pubDate": "Tue, 07 May 2024 15:21:45 -0700",
+      "content": "IM Novak Cabarkapa is an international master from Serbia with two GM norms under his belt. He has trained students of all ages and skill levels, and is available for regular lessons as well as training games. In this article, he shares some of hi...",
+      "contentSnippet": "IM Novak Cabarkapa is an international master from Serbia with two GM norms under his belt. He has trained students of all ages and skill levels, and is available for regular lessons as well as training games. In this article, he shares some of hi...",
+      "guid": "https://www.chess.com/article/view/coach-of-the-month-im-novak-cabarkapa",
+      "isoDate": "2024-05-07T22:21:45.000Z"
+    },
+    {
+      "title": "Grandmaster Vs. Game Review: Gusev's Legendary Queen Sacrifice",
+      "link": "https://www.chess.com/article/view/grandmaster-vs-game-review-gusev-queen-sacrifice",
+      "pubDate": "Tue, 07 May 2024 08:03:35 -0700",
+      "content": "When was the last time you read human-only annotations to a chess game, with zero input from artificial intelligence? Have you ever wondered how a human grandmaster&#39;s understanding stacks up next to Chess.com&#39;s Game Review, and vice versa? \r\nFor t...",
+      "contentSnippet": "When was the last time you read human-only annotations to a chess game, with zero input from artificial intelligence? Have you ever wondered how a human grandmaster's understanding stacks up next to Chess.com's Game Review, and vice versa? \r\nFor t...",
+      "guid": "https://www.chess.com/article/view/grandmaster-vs-game-review-gusev-queen-sacrifice",
+      "isoDate": "2024-05-07T15:03:35.000Z"
+    },
+    {
+      "title": "New Features, New Records, And... New Champions?",
+      "link": "https://www.chess.com/article/view/chesscom-update-may-2024",
+      "pubDate": "Sun, 05 May 2024 22:41:27 -0700",
+      "content": "May&#39;s monthly update is here and we&#39;re recapping the Candidates Tournament, hooking the world&#39;s number one player up to a lie detector, and highlighting some of the chess world&#39;s true artists. \r\nAlso, a much-requested dashboard for following event...",
+      "contentSnippet": "May's monthly update is here and we're recapping the Candidates Tournament, hooking the world's number one player up to a lie detector, and highlighting some of the chess world's true artists. \r\nAlso, a much-requested dashboard for following event...",
+      "guid": "https://www.chess.com/article/view/chesscom-update-may-2024",
+      "isoDate": "2024-05-06T05:41:27.000Z"
+    },
+    {
+      "title": "Turning The Tables: How To Survive A Losing Chess Game",
+      "link": "https://www.chess.com/article/view/what-to-do-when-youre-losing-a-chess-game",
+      "pubDate": "Fri, 03 May 2024 06:01:56 -0700",
+      "content": "Losing is no fun! Unfortunately, all chess players end up in lost positions sometimes. The best ones know how to escape as often as possible and steal draws and wins from busted positions. Here are the techniques you need to know to be a chess Hou...",
+      "contentSnippet": "Losing is no fun! Unfortunately, all chess players end up in lost positions sometimes. The best ones know how to escape as often as possible and steal draws and wins from busted positions. Here are the techniques you need to know to be a chess Hou...",
+      "guid": "https://www.chess.com/article/view/what-to-do-when-youre-losing-a-chess-game",
+      "isoDate": "2024-05-03T13:01:56.000Z"
+    },
+    {
+      "title": "Chess Is Art!",
+      "link": "https://www.chess.com/article/view/chess-is-art",
+      "pubDate": "Thu, 02 May 2024 08:23:58 -0700",
+      "content": "Chess has often been described as a mix of sport, art and science. This laconic definition long ago became an axiom for many generations of chess players. However, in the last 20 years or so, things changed dramatically. Yes, it is still sport; ju...",
+      "contentSnippet": "Chess has often been described as a mix of sport, art and science. This laconic definition long ago became an axiom for many generations of chess players. However, in the last 20 years or so, things changed dramatically. Yes, it is still sport; ju...",
+      "guid": "https://www.chess.com/article/view/chess-is-art",
+      "isoDate": "2024-05-02T15:23:58.000Z"
+    },
+    {
+      "title": "The Best Openings For Black For Beginners",
+      "link": "https://www.chess.com/article/view/black-chess-openings-for-beginners",
+      "pubDate": "Wed, 01 May 2024 08:57:48 -0700",
+      "content": "There&#39;s no way around it&#38;mdash;every chess game starts with the opening. These first few moves are crucial to determining how the rest of the game will go. Because of this, learning how to play the opening well can drastically improve your results...",
+      "contentSnippet": "There's no way around it&mdash;every chess game starts with the opening. These first few moves are crucial to determining how the rest of the game will go. Because of this, learning how to play the opening well can drastically improve your results...",
+      "guid": "https://www.chess.com/article/view/black-chess-openings-for-beginners",
+      "isoDate": "2024-05-01T15:57:48.000Z"
+    },
+    {
+      "title": "The 9 Most Awful Chess Sets You Could Buy",
+      "link": "https://www.chess.com/article/view/awful-chess-sets",
+      "pubDate": "Fri, 26 Apr 2024 06:26:54 -0700",
+      "content": "I would like to start this article with a warning: what you are about to see cannot be unseen. I&#39;ll understand if you click away right now. But if you&#39;re brave enough to power through this, get ready to see the nine most awful chess sets you&#39;ve ev...",
+      "contentSnippet": "I would like to start this article with a warning: what you are about to see cannot be unseen. I'll understand if you click away right now. But if you're brave enough to power through this, get ready to see the nine most awful chess sets you've ev...",
+      "guid": "https://www.chess.com/article/view/awful-chess-sets",
+      "isoDate": "2024-04-26T13:26:54.000Z"
+    },
+    {
+      "title": "9 Iconic Chess Photos",
+      "link": "https://www.chess.com/article/view/iconic-chess-photos",
+      "pubDate": "Wed, 24 Apr 2024 06:59:11 -0700",
+      "content": "What makes a photo &#34;iconic&#34; and not simply interesting or even outstanding? If you find that a difficult question to answer, you are not alone. The two leading dictionaries in the world can&#39;t exactly agree either.&#38;nbsp; \r\nMerriam-Webster: iconic, ...",
+      "contentSnippet": "What makes a photo \"iconic\" and not simply interesting or even outstanding? If you find that a difficult question to answer, you are not alone. The two leading dictionaries in the world can't exactly agree either.&nbsp; \r\nMerriam-Webster: iconic, ...",
+      "guid": "https://www.chess.com/article/view/iconic-chess-photos",
+      "isoDate": "2024-04-24T13:59:11.000Z"
+    }
+  ],
+  "feedUrl": "https://www.chess.com/rss/articles",
+  "paginationLinks": {
+    "self": "https://www.chess.com/rss/articles"
+  },
+  "title": "Chess.com Articles",
+  "description": "The latest articles from Chess.com.",
+  "link": "https://www.chess.com/",
+  "copyright": "2024 Chess.com"
+}
