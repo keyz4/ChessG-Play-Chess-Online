@@ -25,7 +25,7 @@ app.set("view engine","ejs");
 app.use(express.static(path.join(__dirname,"public")));
 app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 app.use(cors({
-    origin: "http://localhost:5173", 
+    origin: "https://chess-g-play-chess-online.vercel.app/", 
     methods: ["GET", "POST"],
     credentials: true
 }));
