@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import BlogCard from './BlogCard';
 import axios from 'axios';
+import { baseUrl } from '../js/baseURL';
 
 const img = 'https://images.pexels.com/photos/6114987/pexels-photo-6114987.jpeg?auto=compress&cs=tinysrgb&w=600';
 
@@ -40,7 +41,7 @@ function Blogs() {
 
     const fetchBlogs = useCallback(async () => {
         try {
-            const result = await axios.get('https://chessg-play-chess-online.onrender.com/blogs');
+            const result = await axios.get(`${baseUrl}/blogs`);
             setResponse(result);
             setLoading(false);
         } catch (error) {

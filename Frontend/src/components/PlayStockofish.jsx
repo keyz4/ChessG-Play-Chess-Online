@@ -4,8 +4,9 @@ import { Chess } from 'chess.js';
 import ChessBoard from './ChessBoard';
 import ChatBox from './ChatBox';
 import ControlPanel from './ControlPanel';
+import { baseUrl } from '../js/baseURL';
 
-const socket  = io.connect('https://chessg-play-chess-online.onrender.com/');
+const socket  = io.connect(`${baseUrl}`);
 
 const stockfish = new Worker('node_modules/stockfish/src/stockfish.js');
 const chess = new Chess();
