@@ -11,7 +11,7 @@ function NavBar() {
   return (
     <div className='flex h-16 bg-slate-950'>
       <div className='h-full w-16 rounded-full p-2' >
-        <img className='rounded-full' src="../src/assets/chessGlogo.jpeg" alt="" />
+        <img className='rounded-full' src="/chessGlogo.svg" alt="" />
       </div>
       <div className='w-1/3 flex justify-between items-center'>
         <Link to='/' className='text-white m-3 mr-2 hover:underline font-bold underline-offset-4'>Home</Link>
