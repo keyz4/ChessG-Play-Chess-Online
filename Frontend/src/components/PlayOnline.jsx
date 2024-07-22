@@ -30,7 +30,7 @@ function PlayOnline() {
   let [gameOver, setGameOver] = useState(false);
   let [text, setText] = useState('');
   let [ok, setOk] = useState(true);
-  let [drawOffer, setDrawOffer] = useState(false)
+  let [drawOffer, setDrawOffer] = useState(false);
   let [BlackKills,setBlackKills] = useState([]);
   let [WhiteKills,setWhiteKills] = useState([]);
   let [chessMove, setChessMove] = useState(null);

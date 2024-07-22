@@ -9,7 +9,7 @@ import { baseUrl } from '../js/baseURL';
 
 const socket  = io.connect(`${baseUrl}`);
 const stockfish = new Worker('/stockfish/src/stockfish.js');
-console.log(stockfish);
+// console.log(stockfish);
 const chess = new Chess();
 let gameFen  = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
 
@@ -27,6 +27,16 @@ function PlayStockofish() {
   let [playerNo, setPlayerNo] = useState(0);
   let [board, setBoard] = useState(chess.board());
   let [theme, setTheme] = useState('lime') // lime amber emerald violet slate pink
+  let [draw, setDraw] = useState(false);
+  let [checkmate, setCheckmate] = useState(false);
+  let [stalemate, setStalemate] = useState(false);
+  let [threefold_repetition, setThreefold_repetition] = useState(false);
+  let [insufficient_material, setInsufficient_material] = useState(false);
+  let [check, setCheck] = useState(false);
+  let [gameOver, setGameOver] = useState(false);
+  let [text, setText] = useState('');
+  let [ok, setOk] = useState(true);
+  let [drawOffer, setDrawOffer] = useState(false);
   let [BlackKills,setBlackKills] = useState([]);
   let [WhiteKills,setWhiteKills] = useState([]);
   const setNewTheme = useCallback(()=>{
@@ -35,6 +45,38 @@ function PlayStockofish() {
   useEffect(()=>{
     setNewTheme();
   },[])
+
+  function checkStatus(){
+    
+    if (chess.isCheckmate()) {
+      setText('Checkmate!');
+      setCheckmate(true);
+      setOk(false);
+    } else if (chess.isStalemate()) {
+        setText('Draw due to Stalemate!');
+        setStalemate(true);
+        setOk(false);
+    } else if (chess.isInsufficientMaterial()) {
+        setText('Draw due to Insufficient Material!');
+        setInsufficient_material(true);
+        setOk(false);
+    } else if (chess.isThreefoldRepetition()) {
+        setText('Draw due to Threefold Repetition!');
+        setThreefold_repetition(true);
+        setOk(false);
+    } else if (chess.isDraw()) {
+        setText('Draw');
+        setDraw(true);
+        setOk(false);
+    } else if (chess.inCheck()) {
+        setCheck(true);
+    }else if(chess.isGameOver()) {
+      setGameOver(true);
+    } else{
+      if(draw) setGameOver(true)
+    }
+  }
+
   stockfish.onmessage = function(event) {
     const message = event.data;
    
@@ -73,6 +115,7 @@ function PlayStockofish() {
     socket.on("move", (move) => {
       chess.move(move);
       setBoard([...chess.board()]);
+      checkStatus();
     });
 
     socket.on("boardState", (fen) => {
@@ -105,6 +148,11 @@ function PlayStockofish() {
       socket.off("stockfishMove");
     };
   }, []);
+
+  const handleBack = ()=>{
+    setText('');
+    setOk(true);
+  }
   
   return (
     <>
@@ -123,6 +171,18 @@ function PlayStockofish() {
           theme={theme}
         />
           <ChatBox theme={theme} room={room} socket={socket} />
+          { !ok && <div className={` h-screen w-screen absolute left-0 top-0 flex justify-center items-center bg-white bg-opacity-50`} >
+              <div className='h-[15rem] w-[30rem] flex flex-col justify-between items-center bg-slate-800 rounded-xl ' >
+                <div className='w-full h-full text-white flex justify-center items-center text-3xl font-serif' >{text}</div>
+                <div className='w-full h-max flex justify-center items-center my-4' > 
+                  <button onClick={drawOffer ? rejectDraw : handleBack} className= 'w-40 h-10 rounded-3xl text-2xl flex justify-center items-center font-mono border-2 text-white mr-4 hover:text-slate-950 hover:bg-white'  >{drawOffer? 'Reject' :'Back'}</button>
+                  {!drawOffer && <a href="/">
+                    <button className= 'w-40 h-10 rounded-3xl text-2xl flex justify-center items-center font-mono border-2 text-white ml-4 hover:text-slate-950 hover:bg-white'  >Exit</button>
+                  </a>}
+                  {drawOffer && <button onClick={acceptDraw} className= 'w-40 h-10 rounded-3xl text-2xl flex justify-center items-center font-mono border-2 text-white ml-4 hover:text-slate-950 hover:bg-white'  >Accept</button>}
+                </div>
+              </div>
+          </div>}
       </div>
     </>
   );

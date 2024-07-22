@@ -15,7 +15,7 @@ function ChessBoard({chess,board,socket,room,playerRole,playerNo,stockfishRole,t
     let [possibleMoves,setPossibleMoves] = useState([]);
     let [clickSource, setClickSource] = useState('');
     useEffect(()=>{
-        console.log(chessMove,'move');
+        // console.log(chessMove,'move');
     },[chessMove])
 
     let getPiece = (rank,file)=>{
@@ -83,8 +83,7 @@ function ChessBoard({chess,board,socket,room,playerRole,playerNo,stockfishRole,t
             target = e.target.getAttribute('data-sq') || e.target.parentNode.parentNode.getAttribute('data-sq');
             handleMove(clickSource,target);
             setPossibleMoves([clickSource,target]);
-            setClickSource('')
-            console.log(clickSource,target,'haha')
+            setClickSource('');
             return;
         }
         if(e.target.parentNode.parentNode) source = e.target.parentNode.parentNode.getAttribute('data-sq');
@@ -95,11 +94,23 @@ function ChessBoard({chess,board,socket,room,playerRole,playerNo,stockfishRole,t
         }
         setClickSource(source);
         let moves = [];
-        console.log(chess.moves({square:source}))
+        // console.log(chess.moves({square:source}))
         chess.moves({square:source}).map((pos,i)=>{
-            console.log(decodeMove(pos));
+            // console.log(decodeMove(pos));
             moves.push(decodeMove(pos));
         })
+        if(chess.moves({square:source}).includes('O-O') && playerRole==='b'){
+            moves.push('g8');
+        }
+        if(chess.moves({square:source}).includes('O-O') && playerRole==='w'){
+            moves.push('g1');
+        }
+        if(chess.moves({square:source}).includes('O-O-O') && playerRole==='w'){
+            moves.push('c1');
+        }
+        if(chess.moves({square:source}).includes('O-O-O') && playerRole==='b'){
+            moves.push('c8');
+        }
         setPossibleMoves(moves);
     }
   return (
