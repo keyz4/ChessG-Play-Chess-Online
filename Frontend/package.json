@@ -19,7 +19,8 @@
     "rss-parser": "^3.13.0",
     "rss-parser-browser": "^2.2.2",
     "socket.io-client": "^4.7.5",
-    "stockfish": "^11.0.0"
+    "stockfish": "^11.0.0",
+    "worker-loader": "^3.0.8"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

@@ -9,6 +9,7 @@ import { baseUrl } from '../js/baseURL';
 const socket  = io.connect(`${baseUrl}`);
 
 const stockfish = new Worker('node_modules/stockfish/src/stockfish.js');
+console.log(stockfish);
 const chess = new Chess();
 let gameFen  = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
 
