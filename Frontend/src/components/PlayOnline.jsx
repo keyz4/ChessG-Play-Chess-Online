@@ -34,7 +34,7 @@ function PlayOnline() {
   let [BlackKills,setBlackKills] = useState([]);
   let [WhiteKills,setWhiteKills] = useState([]);
   let [chessMove, setChessMove] = useState(null);
-
+  let [loading, setLoading] = useState(true);
   function checkStatus(){
     
     if (chess.isCheckmate()) {
@@ -109,10 +109,11 @@ function PlayOnline() {
     socket.on("playerRole",(role)=>{
       setPlayerRole(role);
       console.log("player role : ", role);
+      setLoading(false);
     });
 
     socket.on("move",(move)=>{
-      console.log("move is ",move);
+      // console.log("move is ",move);
       setChessMove(move);
       chess.move(move);
       setBoard([...chess.board()]);
@@ -155,42 +156,56 @@ function PlayOnline() {
   },[]);
 
   useEffect(() => {
-    console.log('chessMove:', chessMove);
+    // console.log('chessMove:', chessMove);
   }, [chessMove]);
 
-  return (
-    <>
-      <div className='relative flex flex-col-reverse md:flex-row h-max md:h-screen w-screen justify-center items-center bg-slate-900'>
-        <div className="util h-[40rem] md:h-full md:w-2/5 w-full bg-slate-900 flex flex-col justify-center items-center ">
-          <ControlPanel theme={theme} socket={socket} room={room}  WhiteKills={WhiteKills} BlackKills={BlackKills} stockfishRole={false} />
-        </div>
-        <ChessBoard 
-        chess={chess}
-          chessMove={chessMove}
-          turn={chess.turn()}
-          board={board} 
-          socket = {socket} 
-          room={room} 
-          playerRole={playerRole}
-          playerNo={playerNo}
-          theme={theme}
-          gameOver={gameOver}/>
-          <ChatBox theme={theme} room={room} socket={socket} />
-          { !ok && <div className={` h-screen w-screen absolute left-0 top-0 flex justify-center items-center bg-white bg-opacity-50`} >
-              <div className='h-[15rem] w-[30rem] flex flex-col justify-between items-center bg-slate-800 rounded-xl ' >
-                <div className='w-full h-full text-white flex justify-center items-center text-3xl font-serif' >{text}</div>
-                <div className='w-full h-max flex justify-center items-center my-4' > 
-                  <button onClick={drawOffer ? rejectDraw : handleBack} className= 'w-40 h-10 rounded-3xl text-2xl flex justify-center items-center font-mono border-2 text-white mr-4 hover:text-slate-950 hover:bg-white'  >{drawOffer? 'Reject' :'Back'}</button>
-                  {!drawOffer && <a href="/">
-                    <button className= 'w-40 h-10 rounded-3xl text-2xl flex justify-center items-center font-mono border-2 text-white ml-4 hover:text-slate-950 hover:bg-white'  >Exit</button>
-                  </a>}
-                  {drawOffer && <button onClick={acceptDraw} className= 'w-40 h-10 rounded-3xl text-2xl flex justify-center items-center font-mono border-2 text-white ml-4 hover:text-slate-950 hover:bg-white'  >Accept</button>}
+  if (loading) {
+    return (
+        <div className='w-screen h-screen flex justify-center items-center bg-slate-900'>
+            <div className='loader-wrapper'>
+                <div className='loader'>
+                    <div></div>
                 </div>
-              </div>
-          </div>}
-      </div>
-    </>
-  )
+                <div className='text-3xl font-bold text-white mt-4'>Loading...</div>
+            </div>
+        </div>
+    );
+  }
+  if(!loading){
+    return (
+      <>
+        <div className='relative flex flex-col-reverse md:flex-row h-max md:h-screen w-screen justify-center items-center bg-slate-900'>
+          <div className="util h-[40rem] md:h-full md:w-2/5 w-full bg-slate-900 flex flex-col justify-center items-center ">
+            <ControlPanel theme={theme} socket={socket} room={room}  WhiteKills={WhiteKills} BlackKills={BlackKills} stockfishRole={false} />
+          </div>
+          <ChessBoard 
+          chess={chess}
+            chessMove={chessMove}
+            turn={chess.turn()}
+            board={board} 
+            socket = {socket} 
+            room={room} 
+            playerRole={playerRole}
+            playerNo={playerNo}
+            theme={theme}
+            gameOver={gameOver}/>
+            <ChatBox theme={theme} room={room} socket={socket} />
+            { !ok && <div className={` h-screen w-screen absolute left-0 top-0 flex justify-center items-center bg-white bg-opacity-50`} >
+                <div className='h-[15rem] w-[30rem] flex flex-col justify-between items-center bg-slate-800 rounded-xl ' >
+                  <div className='w-full h-full text-white flex justify-center items-center text-3xl font-serif' >{text}</div>
+                  <div className='w-full h-max flex justify-center items-center my-4' > 
+                    <button onClick={drawOffer ? rejectDraw : handleBack} className= 'w-40 h-10 rounded-3xl text-2xl flex justify-center items-center font-mono border-2 text-white mr-4 hover:text-slate-950 hover:bg-white'  >{drawOffer? 'Reject' :'Back'}</button>
+                    {!drawOffer && <a href="/">
+                      <button className= 'w-40 h-10 rounded-3xl text-2xl flex justify-center items-center font-mono border-2 text-white ml-4 hover:text-slate-950 hover:bg-white'  >Exit</button>
+                    </a>}
+                    {drawOffer && <button onClick={acceptDraw} className= 'w-40 h-10 rounded-3xl text-2xl flex justify-center items-center font-mono border-2 text-white ml-4 hover:text-slate-950 hover:bg-white'  >Accept</button>}
+                  </div>
+                </div>
+            </div>}
+        </div>
+      </>
+    )
+  }
 }
 
 export default PlayOnline

@@ -72,9 +72,11 @@ function ChessBoard({chess,board,socket,room,playerRole,playerNo,stockfishRole,t
         e.preventDefault();
     }
     const decodeMove = (move)=>{
-        if(move.length===2) return `${move[0]}${move[1]}`
-        if(move.length===3) return `${move[1]}${move[2]}`
-        if(move.length===4) return `${move[2]}${move[3]}`
+        let len = move.length
+        if(move[len-1] === '+') return `${move[len-3]}${move[len-2]}`
+        if(len===2) return `${move[0]}${move[1]}`
+        if(len===3) return `${move[1]}${move[2]}`
+        if(len===4) return `${move[2]}${move[3]}`
     }
     const onClick = (e)=>{
         
@@ -82,6 +84,7 @@ function ChessBoard({chess,board,socket,room,playerRole,playerNo,stockfishRole,t
         if(clickSource !== '' && (possibleMoves.includes(e.target.getAttribute('data-sq')) || possibleMoves.includes(e.target.parentNode.parentNode.getAttribute('data-sq')))){
             target = e.target.getAttribute('data-sq') || e.target.parentNode.parentNode.getAttribute('data-sq');
             handleMove(clickSource,target);
+            if(turn === playerRole || stockfishRole ) checkKill(target);
             setPossibleMoves([clickSource,target]);
             setClickSource('');
             return;
