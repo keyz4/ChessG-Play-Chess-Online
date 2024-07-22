@@ -40,9 +40,16 @@ function Blogs() {
     };
 
     if (loading) {
-        return <div className='w-screen h-screen flex justify-center items-center bg-slate-900' >
-            <div className='text-3xl font-bold text-white'>Loading...</div>
-        </div>;
+        return (
+            <div className='w-screen h-screen flex justify-center items-center bg-slate-900'>
+                <div className='loader-wrapper'>
+                    <div className='loader'>
+                        <div></div>
+                    </div>
+                    <div className='text-3xl font-bold text-white mt-4'>Loading...</div>
+                </div>
+            </div>
+        );
     }
 
     if (!response) {
@@ -56,12 +63,12 @@ function Blogs() {
     }
     if(response) {
         return (
-            <div className='bg-slate-900 flex flex-col items-center h-max w-screen p-4'>
+            <div className='bg-slate-900 flex flex-col items-center h-max w-screen md:p-4'>
                 <div className="pic h-4/5 w-4/5 bg-slate-500 rounded-2xl m-4 mr-16 ml-16">
                     <img className='h-full w-full rounded-2xl' src={img} alt="Image" />
                 </div>
-                <div className='h-max w-screen bg-slate-900 p-12'>
-                    <div className="grid grid-rows-2 grid-cols-3 h-max w-full text-white">
+                <div className='h-max w-screen bg-slate-900 p-4 md:p-12'>
+                    <div className="grid grid-cols-1 md:grid-cols-3 h-max w-full text-white">
                         {blogCards}
                     </div>
                 </div>

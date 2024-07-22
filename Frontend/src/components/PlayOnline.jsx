@@ -160,9 +160,9 @@ function PlayOnline() {
 
   return (
     <>
-      <div className='relative flex h-screen justify-center items-center bg-slate-900'>
-        <div className="util h-full w-2/5 bg-slate-900 flex flex-col justify-center items-center ">
-          <ControlPanel theme={theme} socket={socket} room={room}  WhiteKills={WhiteKills} BlackKills={BlackKills} />
+      <div className='relative flex flex-col-reverse md:flex-row h-max md:h-screen w-screen justify-center items-center bg-slate-900'>
+        <div className="util h-[40rem] md:h-full md:w-2/5 w-full bg-slate-900 flex flex-col justify-center items-center ">
+          <ControlPanel theme={theme} socket={socket} room={room}  WhiteKills={WhiteKills} BlackKills={BlackKills} stockfishRole={false} />
         </div>
         <ChessBoard 
           chessMove={chessMove}

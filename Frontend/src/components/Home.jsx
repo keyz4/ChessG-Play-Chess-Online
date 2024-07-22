@@ -51,9 +51,9 @@ function Home() {
   return (
     <>
       <div className='flex-col h-screen w-screen bg-slate-900' >
-        <div className="HomeScreen flex justify-start items-center h-[90%]  w-full bg-slate-900">
-          <div className=" left flex justify-start items-start bg-slate-900 h-full w-1/2">
-            <div className=' mt-3 chessboard h-[95%] aspect-square'>
+        <div className="HomeScreen flex flex-col md:flex-row justify-start items-center h-max md:h-[90%]  w-full bg-slate-900">
+          <div className=" left flex justify-center md:justify-start md:items-start items-center bg-slate-900 h-full">
+            <div className='flex justify-center mt-3 chessboard w-full md:h-[95%] aspect-square'>
               <ChessBoard 
                 board={board} 
                 room={1} 
@@ -62,20 +62,20 @@ function Home() {
                 stockfishRole={'b'}/>
             </div>
           </div>
-          <div className='rightScreen flex flex-col h-full w-full justify-center items-center' >
+          <div className='rightScreen flex flex-col h-full w-full justify-center items-center mt-4' >
             <div className='homepageText flex justify-center items-center h-2/5 w-[60%] ml-2 mb-2' >
               <div className="flex flex-col h-full w-full justify-center items-center">
                 <span className='text-white text-4xl font-bold'>Play Chess </span>
-                <span className='text-white text-4xl font-thin' >Challenge Stockfish</span>
+                <span className='text-white my-2 text-4xl font-thin text-nowrap' >Challenge Stockfish</span>
               </div>
             </div>
-            <div className='buttons h-[20%] w-[50%] flex justify-center items-center' >
-              <button onClick={playOnline} className='flex justify-center items-center m-2 h-[55%] w-[45%] rounded-xl bg-slate-800 hover:bg-slate-600 text-white font-medium text-2xl' >Play Online</button>
-              <button onClick={playStockfish} className='flex justify-center items-center m-2 h-[65%] w-[45%] rounded-xl bg-slate-800 hover:bg-slate-600 text-white font-medium text-2xl p-2'>Challenge Stockfish</button>
+            <div className='buttons h-max md:h-[20%] w-full md:w-[50%] flex justify-center items-center mb-8' >
+              <button onClick={playOnline} className='flex justify-center items-center m-2 h-[4rem] md:h-[55%] w-[45%] rounded-xl bg-slate-800 hover:bg-slate-600 text-white font-medium text-2xl' >Play Online</button>
+              <button onClick={playStockfish} className='flex justify-center items-center m-2 h-[4rem] md:h-[55%] w-[45%] rounded-xl bg-slate-800 hover:bg-slate-600 text-white font-medium text-xl p-2'>Challenge Stockfish</button>
             </div>
           </div>
         </div>
-        <div className='RulesHome flex flex-col h-max w-screen bg-slate-900 p-24 pb-0 pt-4' >
+        <div className='RulesHome flex flex-col h-max w-screen bg-slate-900 md:p-24 p-4 pb-0 pt-4' >
             <div  className='flex flex-col items-center h-full w-full bg-slate-950 text-yellow-500' >
               <div className='font-bold text-4xl mt-4 font-serif'>RULES</div>
               <div className='w-full h-full text-wrap' ><ShortChessRules/></div>
@@ -84,13 +84,18 @@ function Home() {
         <div className=' ChessToday h-max w-screen bg-slate-900 p-8 pb-0' >
             <div className='h-full w-full' >
               <div className="flex flex-col h-full w-full items-center justify-between">
-                <div className='text-4xl font-bold text-white mt-8' >Know more about chess</div>
-                {loading && <div className='w-full h-40 flex justify-center items-center bg-slate-900' >
-            <div className='text-3xl font-bold text-white'>Loading...</div>
-        </div> }
+                <div className='text-4xl font-bold text-white mt-8 text-center' >Know more about chess</div>
+                {loading && <div className='w-full h-full flex justify-center items-center bg-slate-900'>
+                <div className='loader-wrapper'>
+                    <div className='loader'>
+                        <div></div>
+                    </div>
+                    <div className='text-3xl font-bold text-white mt-4'>Loading...</div>
+                </div>
+            </div> }
                 {!response && <div className='w-full h-40 flex justify-center items-center bg-slate-900'>
                   <div className='text-3xl font-bold text-white'>{errorMessage}</div></div>}
-                  {response && <div className='grid grid-row-2 grid-cols-3 w-full h-max p-8 text-white' >
+                  {response && <div className='grid grid-cols-1 md:grid-cols-3 w-full h-max md:p-8 text-white' >
                   <BlogCard index={0} response={response} images={images}/>
                   <BlogCard index={1} response={response} images={images}/>
                   <BlogCard index={2} response={response} images={images}/>

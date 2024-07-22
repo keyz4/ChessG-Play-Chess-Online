@@ -29,7 +29,7 @@ function ChatBox({ theme, room, socket }) {
   }, [messages]);
 
   return (
-    <div className="h-full w-2/5 bg-slate-900 p-4 pt-7 flex flex-col items-center">
+    <div className="h-full w-2/5 bg-slate-900 p-4 pt-7 hidden md:flex md:flex-col items-center">
       <div className={`h-[90%] w-full bg-slate-950 text-white mb-2 rounded-2xl overflow-y-auto overflow-x-hidden scroll-m-4 flex flex-col p-4 border-4 border-${theme}-700 hide-scrollbar`}>
         {messages.map((msgObj, index) => (
           <div key={index} className={`w-full flex ${msgObj.sendBy == 0 ? 'justify-end' : 'justify-start'}`}>

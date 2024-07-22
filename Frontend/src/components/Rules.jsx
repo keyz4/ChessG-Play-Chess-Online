@@ -2,9 +2,9 @@ import React from 'react';
 
 function Rules() {
   return (
-    <div className="bg-slate-950 text-gray-200 p-8">
+    <div className="bg-slate-950 text-gray-200 p-8 text-left">
       <ul className="mb-6">
-        <li className="text-3xl font-bold mb-4 text-yellow-400">Welcome to the World of Chess!</li>
+        <li className="text-3xl font-bold mb-4 text-yellow-400 text-center">Welcome to the World of Chess!</li>
         <li>
           <ul className="mb-4">
             <li className="text-2xl font-semibold mb-2 text-cyan-400">Chessboard Setup</li>

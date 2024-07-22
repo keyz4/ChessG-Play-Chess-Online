@@ -70,8 +70,8 @@ function ChessBoard({board,socket,room,playerRole,playerNo,stockfishRole,theme,g
     }
   return (
     <>
-        <div className={`chesssBoard flex-col h-[95%] aspect-square items-center p-4`} >
-                <div className='h-full w-max flex'>
+        <div className={`chesssBoard flex-col w-[90%] md:h-[95%] aspect-square items-center p-4 mr-8 my-4  md:w-max`} >
+                <div className='h-full w-full flex'>
                     <ChessBoardRanks player ={playerRole} ></ChessBoardRanks>
                     <div className={`board ${playerRole ==='b' ? 'rotate-180' : 'rotate 0'} text-slate-400 grid grid-rows-8 grid-cols-8 h-full aspect-square border-4 border-slate-300`}>
                         {ranks.map((rank,i)=>
@@ -88,7 +88,9 @@ function ChessBoard({board,socket,room,playerRole,playerNo,stockfishRole,theme,g
                                 </div>))}
                     </div>
                 </div>
-                <ChessBoardFiles player ={playerRole} ></ChessBoardFiles>
+                <div className="w-full">
+                    <ChessBoardFiles player ={playerRole} ></ChessBoardFiles>
+                </div>
             </div>
     </>
   )

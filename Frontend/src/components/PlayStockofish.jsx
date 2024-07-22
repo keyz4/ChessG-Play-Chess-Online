@@ -108,9 +108,9 @@ function PlayStockofish() {
 
   return (
     <>
-      <div className='flex h-screen justify-center items-center bg-slate-900'>
-        <div className="util h-full w-2/5 bg-slate-900 flex flex-col justify-center items-center ">
-          <ControlPanel theme={theme} socket={socket} room={room}  WhiteKills={WhiteKills} BlackKills={BlackKills} />
+      <div className='flex flex-col-reverse md:flex-row h-max md:h-screen justify-center items-center bg-slate-900'>
+        <div className="util h-[40rem] w-full md:h-full md:w-2/5 bg-slate-900 flex flex-col justify-center items-center ">
+          <ControlPanel theme={theme} socket={socket} room={room}  WhiteKills={WhiteKills} BlackKills={BlackKills} stockfishRole={stockfishRole} />
         </div>
         <ChessBoard 
           board={board} 
