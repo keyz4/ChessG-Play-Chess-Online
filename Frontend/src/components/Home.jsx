@@ -5,12 +5,20 @@ import { useNavigate } from 'react-router-dom';
 import ShortChessRules from './ShortChessRules';
 import BlogCard from './BlogCard'
 import Footer from './Footer';
-
+import { images } from '../js/images';
+import { useEffect, useCallback,useState } from 'react';
+import { baseUrl } from '../js/baseURL';
+import axios from 'axios';
 
 const chess = new Chess();
 const board = chess.board();
 
 function Home() {
+
+  const [response, setResponse] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState('');
+
   const navigate = new useNavigate();
   const playOnline = ()=>{
     alert('Play Online')
@@ -26,6 +34,20 @@ function Home() {
     navigate('/blogs');
     window.scrollTo(0, 0);
   }
+  const fetchBlogs = useCallback(async () => {
+    try {
+        const result = await axios.get(`${baseUrl}/blogs`);
+        setResponse(result);
+        setLoading(false);
+    } catch (error) {
+        setErrorMessage('Error fetching blogs!');
+        setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
   return (
     <>
       <div className='flex-col h-screen w-screen bg-slate-900' >
@@ -63,14 +85,19 @@ function Home() {
             <div className='h-full w-full' >
               <div className="flex flex-col h-full w-full items-center justify-between">
                 <div className='text-4xl font-bold text-white mt-8' >Know more about chess</div>
-                <div className='grid grid-row-2 grid-cols-3 w-full h-max p-8 text-white' >
-                  <BlogCard index={0} />
-                  <BlogCard index={1} />
-                  <BlogCard index={2} />
-                  <BlogCard index={3} />
-                  <BlogCard index={4} />
-                  <BlogCard index={5} />
-                </div>
+                {loading && <div className='w-full h-40 flex justify-center items-center bg-slate-900' >
+            <div className='text-3xl font-bold text-white'>Loading...</div>
+        </div> }
+                {!response && <div className='w-full h-40 flex justify-center items-center bg-slate-900'>
+                  <div className='text-3xl font-bold text-white'>{errorMessage}</div></div>}
+                  {response && <div className='grid grid-row-2 grid-cols-3 w-full h-max p-8 text-white' >
+                  <BlogCard index={0} response={response} images={images}/>
+                  <BlogCard index={1} response={response} images={images}/>
+                  <BlogCard index={2} response={response} images={images}/>
+                  <BlogCard index={3} response={response} images={images}/>
+                  <BlogCard index={4} response={response} images={images}/>
+                  <BlogCard index={5} response={response} images={images}/>
+                </div>}
                 <div className='w-full h-1/6 flex justify-center items-center' >
                   <button onClick={readBlogs} className='h-16 w-48 bg-slate-900 text-lime-400 font-bold text-3xl fles justify-center items-center rounded-lg hover:bg-slate-600 border-2 border-indigo-800 mb-12' >Learn Chess</button>
                 </div>

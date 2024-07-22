@@ -2,35 +2,11 @@ import React, { useState, useEffect, useCallback } from 'react';
 import BlogCard from './BlogCard';
 import axios from 'axios';
 import { baseUrl } from '../js/baseURL';
+import { images } from '../js/images';
 
 const img = 'https://images.pexels.com/photos/6114987/pexels-photo-6114987.jpeg?auto=compress&cs=tinysrgb&w=600';
 
-const images = [
-    'https://images.pexels.com/photos/411207/pexels-photo-411207.jpeg',
-    'https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg',
-    'https://images.pexels.com/photos/8466163/pexels-photo-8466163.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/277124/pexels-photo-277124.jpeg',
-    'https://images.pexels.com/photos/277092/pexels-photo-277092.jpeg',
-    'https://images.pexels.com/photos/6114957/pexels-photo-6114957.jpeg',
-    'https://images.chesscomfiles.com/uploads/v1/article/30943.9c9f98cf.300x169o.ad775e4caa00@2x.png',
-    'https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg',
-    'https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg',
-    'https://images.pexels.com/photos/7207268/pexels-photo-7207268.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/10626503/pexels-photo-10626503.jpeg',
-    'https://images.chesscomfiles.com/uploads/v1/article/30807.40e7bc95.300x169o.7a62fe7ea6b7@2x.png',
-    'https://images.pexels.com/photos/5477776/pexels-photo-5477776.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/8865448/pexels-photo-8865448.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/462685/pexels-photo-462685.jpeg',
-    'https://images.pexels.com/photos/5692995/pexels-photo-5692995.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg',
-    'https://images.pexels.com/photos/8438923/pexels-photo-8438923.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/700971/pexels-photo-700971.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg',
-    'https://images.pexels.com/photos/4114602/pexels-photo-4114602.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/814133/pexels-photo-814133.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/10626498/pexels-photo-10626498.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/6028683/pexels-photo-6028683.jpeg?auto=compress&cs=tinysrgb&w=600',
-  ];
+
 
 function Blogs() {
     
