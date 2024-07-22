@@ -105,7 +105,7 @@ function PlayStockofish() {
       socket.off("stockfishMove");
     };
   }, []);
-
+  
   return (
     <>
       <div className='flex flex-col-reverse md:flex-row h-max md:h-screen justify-center items-center bg-slate-900'>
@@ -113,6 +113,7 @@ function PlayStockofish() {
           <ControlPanel theme={theme} socket={socket} room={room}  WhiteKills={WhiteKills} BlackKills={BlackKills} stockfishRole={stockfishRole} />
         </div>
         <ChessBoard 
+          chess={chess}
           board={board} 
           socket={socket} 
           room={room} 

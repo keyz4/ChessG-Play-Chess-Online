@@ -165,6 +165,7 @@ function PlayOnline() {
           <ControlPanel theme={theme} socket={socket} room={room}  WhiteKills={WhiteKills} BlackKills={BlackKills} stockfishRole={false} />
         </div>
         <ChessBoard 
+        chess={chess}
           chessMove={chessMove}
           turn={chess.turn()}
           board={board} 

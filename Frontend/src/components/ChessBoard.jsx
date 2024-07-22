@@ -3,15 +3,17 @@ import { Chess } from 'chess.js';
 import ChessBoardFiles from './ChessBoardFiles';
 import ChessBoardRanks from './ChessBoardRanks';
 import Pieces from './Pieces';
-const chess = new Chess();
+
 
 
 const kills = [];
 
 
-function ChessBoard({board,socket,room,playerRole,playerNo,stockfishRole,theme,gameOver,turn,chessMove}) {
+function ChessBoard({chess,board,socket,room,playerRole,playerNo,stockfishRole,theme,gameOver,turn,chessMove}) {
     // console.log("board is : ",board)
     // console.log("player is", playerRole)
+    let [possibleMoves,setPossibleMoves] = useState([]);
+    let [clickSource, setClickSource] = useState('');
     useEffect(()=>{
         console.log(chessMove,'move');
     },[chessMove])
@@ -22,9 +24,10 @@ function ChessBoard({board,socket,room,playerRole,playerNo,stockfishRole,theme,g
         return Square ? <Pieces square = {Square} rank = {rank} file = {file} /> : null;
     };
     // console.log("Board is", chessBoard)
-    const getSquareColor = (i,j) =>{
+    const getSquareColor = (i,j,file,rank) =>{
         let color = 'white';
         color =  (i+j)%2 !==0 ? `bg-${theme}-700` : 'bg-white';
+        if(possibleMoves.includes(`${file}${rank}`)) color = `bg-${theme}-500`;
         return color;
     }
     const handleMove = (source,target)=>{
@@ -68,6 +71,37 @@ function ChessBoard({board,socket,room,playerRole,playerNo,stockfishRole,theme,g
     const onDragOver = (e)=>{
         e.preventDefault();
     }
+    const decodeMove = (move)=>{
+        if(move.length===2) return `${move[0]}${move[1]}`
+        if(move.length===3) return `${move[1]}${move[2]}`
+        if(move.length===4) return `${move[2]}${move[3]}`
+    }
+    const onClick = (e)=>{
+        
+        let source = '',target = '';
+        if(clickSource !== '' && (possibleMoves.includes(e.target.getAttribute('data-sq')) || possibleMoves.includes(e.target.parentNode.parentNode.getAttribute('data-sq')))){
+            target = e.target.getAttribute('data-sq') || e.target.parentNode.parentNode.getAttribute('data-sq');
+            handleMove(clickSource,target);
+            setPossibleMoves([clickSource,target]);
+            setClickSource('')
+            console.log(clickSource,target,'haha')
+            return;
+        }
+        if(e.target.parentNode.parentNode) source = e.target.parentNode.parentNode.getAttribute('data-sq');
+        if(!source){
+            setPossibleMoves([]);
+            setClickSource('');
+            return;
+        }
+        setClickSource(source);
+        let moves = [];
+        console.log(chess.moves({square:source}))
+        chess.moves({square:source}).map((pos,i)=>{
+            console.log(decodeMove(pos));
+            moves.push(decodeMove(pos));
+        })
+        setPossibleMoves(moves);
+    }
   return (
     <>
         <div className={`chesssBoard flex-col w-[90%] md:h-[95%] aspect-square items-center p-4 mr-8 my-4  md:w-max`} >
@@ -80,8 +114,9 @@ function ChessBoard({board,socket,room,playerRole,playerNo,stockfishRole,theme,g
                                 data-sq = {`${file}${rank}`}
                                 onDrop={onDrop}
                                 onDragOver={onDragOver} 
+                                onClick={onClick}
                                 draggable = 'false' 
-                                key = {file+'-'+rank} className = {` ${playerRole ==='b' ? 'rotate-180' : 'rotate 0'} ${getSquareColor(i,j)} piece flex justify-center items-center`} > 
+                                key = {file+'-'+rank} className = {` ${playerRole ==='b' ? 'rotate-180' : 'rotate 0'} ${getSquareColor(i,j,file,rank)} piece flex justify-center items-center`} > 
                                 
                                 {getPiece(rank,file)}
 
